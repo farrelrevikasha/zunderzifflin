@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+	font-family: 'Roboto';
+}
+
+section
+{
+	padding: 100px;
+	padding-top: 130px;
+	background: #fff;
+	/* height: 100%; */
+	/* height: 100vh; */
+	/* background-color: crimson; */
+}
+
+header{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100px;
+	padding: 20px 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 10000;
+	box-shadow: 0px 0px 35px 0px grey;
+}
+
+header .logo{
+	position: relative;
+	width: 145px;
+}
+
+
+.navigation
+{
+	position: absolute;
+	display: flex;
+	right: 30px;
+	list-style: none;
+}
+
+
+.navigation li a
+{
+	color: #003663;
+	text-decoration: none;
+	font-size: 16px;
+	margin: 0 20px;
+	font-weight: 600;
+	display: inline-block;
+	/* opacity: 0; */
+	text-transform: uppercase;
+}
+
+.navigation li a:hover
+{
+	color: #00aeef;
+}
+
+
+section .container
+{
+	position: absolute;
+	height: calc(100% - 200px);
+	width: calc(100% - 200px);
+	overflow: hidden;
+	/* box-shadow: 0px 0px 8px 0px; */
+	background-color: transparent;
+	
+}
+
+section .container figure{
+	margin: 0px;
+	position: relative;
+	width: 1000%;
+	left: 0px;
+	transition: 1s ease-in-out;
+}
+
+section .container figure img{
+	height: 562px;
+	width: 1319px;
+	float: left;
+}
+
+.btn-n, .btn-p{
+	position: absolute;
+	top: 45%;
+	cursor: pointer;
+	color: #003663;
+	background-color: white; 
+	opacity: 30%;
+	padding: 8px;
+	font-size: 30px;
+	border: none;
+	width: 50px;
+	transition: ease-in-out .3s;
+}
+
+.btn-p:hover{
+	background-color: #003663;
+	opacity: 100%;
+	color: #00aeef;
+}
+
+.btn-n:hover{
+	background-color: #003663;
+	opacity: 100%;
+	color: #00aeef;
+}
+
+.btn-n{
+	right: 0px;
+}
+.btn-p{
+	left: 0px;
+}
+
+.content{
+	position: absolute;
+	margin-top: 500px;
+	margin-right: 10%;
+	margin-left: 10%;
+	color: #003663;
+	/* background-color: khaki; */
+	/* display: flex; */
+	
+}
+
+.content .textclass{
+	padding-top: 20px;
+	padding-right: 50px;
+	padding-bottom: 30px;
+}
+
+
+.boxContainer{
+	margin-top: 620px;
+	position: relative;
+	padding-left: 100px;
+	padding-right: 100px;
+	width: 100%;
+	height: 300px;
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.box{
+
+	height: 162px;
+	width: 310px;
+	box-shadow: 0 0 10px  grey; 
+}
+
+
+.footer {
+	position: absolute;
+	margin-top: 0px;	
+	left: 0;
+	width: 1518px;
+	width: 100%;
+	height: 50px;
+	
+	/* padding: 0 100px; */
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	/* margin-left: 0px;
+	margin-right: 0px; */
+	box-shadow: 0px 0px 3px 0px grey;
+}
+
+.soscmed{
+	width: 170px;
+	position: relative;
+	display: flex;
+	justify-content: space-around;
+	list-style: none;
+}
+
+.footericon{
+	position: relative;
+	width: 40px;
+
+}
+
+/* .textFooter{
+	transform: translateX(-100px);
+} */
+
+
+@media  (max-width: 800px){
+	.navigation{
+		visibility: hidden;
+		width: 100%;
+		height: 250px;
+		background-color: #003663;
+		position: absolute;
+		top: 100px;
+		right: 0;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.navigation.active{
+		visibility: visible;
+	}
+
+	.navigation li a{
+		color: #fff;
+		margin-top: 15px;
+		margin-bottom: 15px;
+	}
+	
+	header .toggle
+	{
+		position: relative;
+		width: 30px;
+		height: 30px;
+		background: url("../img/menu.png");
+		background-size: 30px;
+		background-position: center;
+		background-repeat: no-repeat;
+		cursor: pointer;
+	    z-index: 10000;
+		transition: ease-in-out .2s;
+	
+	}
+
+	section header .toggle.active
+	{
+		background: url("../img/close.png");
+		background-size: 25px;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+	
+
+	.boxContainer{
+		margin-top: 770px;
+		position: relative;
+		padding-left: 200px;
+		padding-right: 300px;
+		padding-bottom: 20px;
+		width: 100%;
+		height: 550px;
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	.content{
+		padding-right: 10%;
+		padding-left: 10%;
+		color: #003663;
+	}
+
+	.box{
+		height: 150px;
+		width: 250px;
+	}
+
+	
+}
+

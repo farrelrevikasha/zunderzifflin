@@ -1,0 +1,37 @@
+.uppertext{
+    color: #003663;
+}
+
+.text{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #003663;
+}
+
+.images{
+    width: 100%;
+    padding: 10px;
+    padding-bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.images img{
+    width: 50%;
+    margin: 5px;
+}
+
+.undertext{
+    padding-top: 50px;
+    color: #003663;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14pt;
+    transform: translateY(30px);
+}
+
+.space{
+    height: 30px;
+}

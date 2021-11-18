@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    font-family: 'Roboto';
+    color: #003663;
+}
+
+
+.form-outer form .page .title {
+    padding-top: 70px;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: left;
+}
+
+.form-outer form .page .field {
+    width: 300px;
+    height: 45px;
+    margin: 45px 0;
+    display: flex;
+    position: relative;
+}
+
+.form-outer form .page .field2 {
+    width: 300px;
+    height: 90px;
+    margin: 45px 0;
+    display: flex;
+    position: relative;
+}
+
+
+.form-outer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+form .page .field .label {
+    position: absolute;
+    top: -30px;
+    font-weight: 500;
+}
+
+form .page .field2 .label {
+    position: absolute;
+    top: -30px;
+    font-weight: 500;
+}
+
+form .page .field input {
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+    padding-left: 15px;
+    font-size: 18px;
+}
+
+form .page .field2 input {
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+    padding-left: 15px;
+    font-size: 18px;
+}
+
+form .page .field select {
+    width: 100%;
+    padding-left: 10px;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+form .page .field button {
+    width: 100%;
+    height: calc(100% + 5px);
+    border: none;
+    background: #00AEEF;
+    border-radius: 5px;
+    color: #fff;
+    margin-top: -20px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: .5s;
+}
+
+
+form .page .field button:hover {
+    background: #003663;
+}
+
+
